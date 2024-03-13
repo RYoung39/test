@@ -1,0 +1,9 @@
+name: demo
+services:
+  backend:
+    image: demo:latest
+    pull_policy: never
+    container_name: demo
+    ports:
+      - "8888:8080"
+    restart: "on-failure"
